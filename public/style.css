@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    text-align: center;
+    border: 5px dotted rgb(192, 255, 235);
+    border-style: dashed;
+    padding: 50px;
+    background-color: rgb(141, 207, 185);
+    height: auto;
+    border-radius: 15px;
+}
+
+h1 {
+    color: rgb(236, 255, 248);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: rgb(192, 255, 235);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Add text overflow for list items */
+li span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+button {
+    background-color: rgb(92, 201, 167);
+    border: none;
+    border-radius: 5px;
+    padding: 8px; 
+    color: white;
+    margin-left: 10px;
+}
+button:hover{
+    background-color: rgb(119, 188, 166);
+}
+input{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(192, 255, 235);    
+}
+input:hover{
+    border-color: rgb(192, 255, 235);
+}
+input::placeholder{
+    color: rgb(96, 138, 125);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(92, 201, 167);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(92, 201, 167);
+}
